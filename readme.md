@@ -34,9 +34,9 @@
   const item = {};
   ```
 
-  <a name="objects--quoted-props"></a><a name="2.2"></a>
+<a name="objects--quoted-props"></a><a name="2.2"></a>
 
-  - [2.2](#objects--quoted-props) Only quote properties that are invalid identifiers. eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props)
+- [2.2](#objects--quoted-props) Only quote properties that are invalid identifiers. eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props)
 
     > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
 
@@ -106,9 +106,9 @@
     }
     ```
 
-  <a name="arrows--confusing"></a><a name="5.2"></a>
+<a name="arrows--confusing"></a><a name="5.2"></a>
 
-  - [5.2](#arrows--confusing) Avoid confusing arrow function syntax (`=>`) with comparison operators (`<=`, `>=`). eslint: [`no-confusing-arrow`](https://eslint.org/docs/rules/no-confusing-arrow)
+- [5.2](#arrows--confusing) Avoid confusing arrow function syntax (`=>`) with comparison operators (`<=`, `>=`). eslint: [`no-confusing-arrow`](https://eslint.org/docs/rules/no-confusing-arrow)
 
    ```javascript
     // bad
@@ -187,9 +187,9 @@
 
 ## Modules
 
-  <a name="modules--no-duplicate-imports"></a>
-  - [7.1](#modules--no-duplicate-imports) Only import from a path in one place.
- eslint: [`no-duplicate-imports`](https://eslint.org/docs/rules/no-duplicate-imports)
+<a name="modules--no-duplicate-imports"></a>
+
+- [7.1](#modules--no-duplicate-imports) Only import from a path in one place. eslint: [`no-duplicate-imports`](https://eslint.org/docs/rules/no-duplicate-imports)
     > Why? Having multiple lines that import from the same path can make code harder to maintain.
 
     ```javascript
@@ -208,9 +208,9 @@
     } from 'foo';
     ```
 
-    <a name="modules--imports-first"></a>
-  - [7.2](#modules--imports-first) Put all `import`s above non-import statements.
- eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)
+<a name="modules--imports-first"></a>
+  
+- [7.2](#modules--imports-first) Put all `import`s above non-import statements. eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)
     > Why? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
 
     ```javascript
@@ -227,9 +227,9 @@
     foo.init();
     ```
 
-  <a name="modules--multiline-imports-over-newlines"></a>
-  - [7.3](#modules--multiline-imports-over-newlines) Multiline imports should be indented just like multiline array and object literals.
- eslint: [`object-curly-newline`](https://eslint.org/docs/rules/object-curly-newline)
+<a name="modules--multiline-imports-over-newlines"></a>
+  
+- [7.3](#modules--multiline-imports-over-newlines) Multiline imports should be indented just like multiline array and object literals. eslint: [`object-curly-newline`](https://eslint.org/docs/rules/object-curly-newline)
 
     > Why? The curly braces follow the same indentation rules as every other curly brace block in the style guide, as do the trailing commas.
 
@@ -249,8 +249,9 @@
 
 ## Properties
 
-  <a name="properties--dot"></a><a name="8.1"></a>
-  - [8.1](#properties--dot) Use dot notation when accessing properties. eslint: [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
+<a name="properties--dot"></a><a name="8.1"></a>
+  
+- [8.1](#properties--dot) Use dot notation when accessing properties. eslint: [`dot-notation`](https://eslint.org/docs/rules/dot-notation)
 
     ```javascript
     const luke = {
@@ -279,9 +280,9 @@
   const superPower = new SuperPower();
   ```
 
-  <a name="variables--one-const"></a><a name="9.2"></a>
+<a name="variables--one-const"></a><a name="9.2"></a>
 
-  - [9.2](#variables--one-const) Use one `const` or `let` declaration per variable or assignment. eslint: [`one-var`](https://eslint.org/docs/rules/one-var)
+- [9.2](#variables--one-const) Use one `const` or `let` declaration per variable or assignment. eslint: [`one-var`](https://eslint.org/docs/rules/one-var)
 
     > Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
 
@@ -303,9 +304,9 @@
     const dragonball = "z";
     ```
 
-    <a name="variables--no-unused-vars"></a>
+<a name="variables--no-unused-vars"></a>
 
-  - [9.3](#variables--no-unused-vars) Disallow unused variables. eslint: [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars)
+- [9.3](#variables--no-unused-vars) Disallow unused variables. eslint: [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars)
 
     > Why? Variables that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring. Such variables take up space in the code and can lead to confusion by readers.
 
@@ -344,8 +345,9 @@
     // 'coords' is now the 'data' object without its 'type' property.
     ```
 
-  <a name="variables--unary-increment-decrement"></a><a name="9.4"></a>
-  - [9.4](#variables--unary-increment-decrement) Avoid using unary increments and decrements (`++`, `--`). eslint [`no-plusplus`](https://eslint.org/docs/rules/no-plusplus)
+<a name="variables--unary-increment-decrement"></a><a name="9.4"></a>
+
+- [9.4](#variables--unary-increment-decrement) Avoid using unary increments and decrements (`++`, `--`). eslint [`no-plusplus`](https://eslint.org/docs/rules/no-plusplus)
 
     > Why? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
 

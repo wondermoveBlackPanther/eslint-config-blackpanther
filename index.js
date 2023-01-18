@@ -3,6 +3,6 @@ module.exports = {
     },
     extends: [
         './rules/best-practices.js',
-        './es6.js'
+        './rules/style.js'
     ]
 }
