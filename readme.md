@@ -165,9 +165,9 @@
     });
     ```
 
-  <a name="whitespace--implicit-arrow-linebreak"></a>
+<a name="whitespace--implicit-arrow-linebreak"></a>
 
-  - [6.2](#whitespace--implicit-arrow-linebreak) Enforce the location of arrow function bodies with implicit returns. eslint: [`implicit-arrow-linebreak`](https://eslint.org/docs/rules/implicit-arrow-linebreak)
+- [6.2](#whitespace--implicit-arrow-linebreak) Enforce the location of arrow function bodies with implicit returns. eslint: [`implicit-arrow-linebreak`](https://eslint.org/docs/rules/implicit-arrow-linebreak)
 
     ```javascript
     // bad
