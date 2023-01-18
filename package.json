@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-blackpanther",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^8.17.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wondermoveBlackPanther/eslint-config-blackpanther.git"
+  },
+  "keywords": [],
+  "author": "blackpanther@wondermove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wondermoveBlackPanther/eslint-config-blackpanther/issues"
+  },
+  "homepage": "https://github.com/wondermoveBlackPanther/eslint-config-blackpanther#readme"
+}
